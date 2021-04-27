@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Eksamensopgave - Simon Lind</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div id="appContainer">
+			<div id="filterContainer">
+				<h2>Set Filters</h2>
+				<form action="#" id="filterForm">
+					<div id="col-1" class="filterCol">
+						<label for="from_email">From Email:</label>
+						<input id="from_email" type="email" placeholder="Optional">
+						<br><br>
+						<label for="to_email">To Email:</label>
+						<input id="to_email" type="email" placeholder="Optional">
+					</div>
+
+					<div id="col-2" class="filterCol">
+						<label for="subject">Subject:</label>
+						<input id="subject" type="text" placeholder="Optional">
+						<br><br>
+						<label for="limit">Limit:</label>
+						<input id ="limit" type="number" placeholder="Defaults to 100">
+					</div>
+
+					<div id="col-3" class="filterCol">
+						
+						<div id="statusContainer">
+							<label for="status">Status:</label>
+							<select name="status" id="status">
+								<option value="delivered">Delivered</option>
+								<option value="not_delivered">Not Delivered</option>
+								<option value="" selected>Both</option>
+							</select>
+						</div>
+
+					</div>
+					<br>
+					
+				</form>
+				
+			</div>
+			<div id="buttonContainer">
+				<button id="fetchDataBtn" class="actionButton">Fetch Data</button>
+				<button id="downloadCSVBtn" class="actionButton" disabled>Download CSV File</button>
+			</div>
+			<div id="tableContainer">
+
+				<h2>Preview:</h2>
+				<div id="loaderContainer"></div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

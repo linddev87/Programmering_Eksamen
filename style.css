@@ -1,0 +1,83 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.filterCol{
+	width: 33%;
+	float: left;
+}
+
+#appContainer {
+	min-width: 50em;
+	max-width: 70em; 
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+}
+
+label {
+    min-width: 95px;
+    display: inline-block;
+}
+
+#statusHeader {
+    float: left;
+}
+
+#statusContainer {
+    margin-left: 75px;
+}
+
+.actionButton {
+    height: 3em;
+    min-width: 20em;
+    margin-right: auto;
+    display: inline-block;
+	margin-left: auto;
+	font-weight: bold;
+}
+
+#buttonContainer {
+	margin-top: 5em;
+	border-radius: 3px;
+	border-bottom: 4px solid #BFFCC6;
+	padding: 30px;
+	text-align: center;
+}
+
+#emailTable {
+	margin-top: 1em;
+	width: 100%;
+}
+
+#headerRow td{
+	width: auto;
+	font-weight: bold;
+}
+
+.hidden {
+    display: none;
+	max-width: 0px;
+}
+
+#loaderContainer {
+	width: 100%;
+	text-align: center;
+}
+
+
+/* Loader settings - taken from w3schools example*/
+#loader {
+	border: 10px solid #f3f3f3; /* Light grey */
+	border-top: 10px solid #BFFCC6; /* Blue */
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 2s linear infinite;
+	display: inline-block;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
